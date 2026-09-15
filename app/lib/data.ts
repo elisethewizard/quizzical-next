@@ -33,7 +33,7 @@ export async function resetToken(token: string) {
     }
 }
 
-export async function getData(token?: string) {
+export async function getData(token: string) {
     try {
         const url = `https://opentdb.com/api.php?amount=5&type=multiple&token=${token}`
         const res = await fetch(url)
