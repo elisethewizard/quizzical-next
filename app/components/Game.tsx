@@ -107,20 +107,31 @@ export default function Game() {
         switch (gameState) {
             case 'play':
                 return (
-                    <button className='btn check-btn'>Check answers</button>
+                    <button className='btn'>Check answers</button>
                 )
             case 'play-unfinished':
                 return (
                     <>
-                        <h1 className='unfinished-text'>Some quiestions have no answer selected.</h1>
-                        <button className='btn check-btn'>Check anyway</button>
+                        <h1 className='max-w-3xs font-bold text-xl md:text-2xl md:max-w-fit md:whitespace-nowrap'
+                        >Some quiestions have no answer selected.</h1>
+                        <button className='btn'>Check anyway</button>
                     </>
                 )
             case 'check':
                 return (
                     <>
-                        <h1 className='replay-text'>You scored {score}/{data.length} correct answers</h1>
-                        <button className='btn replay-btn' type='button' onClick={startGame}>Play again</button>
+                        <h1 
+                            className='font-bold text-xl max-w-58 xs:max-w-fit xs:whitespace-nowrap md:text-2xl'
+                        >
+                            You scored {score}/{data.length} correct answers
+                        </h1>
+                        <button 
+                            className='btn py-2.75 px-4 xs:py-2.75 xs:px-5.5' 
+                            type='button' 
+                            onClick={startGame}
+                        >
+                            Play again
+                        </button>
                     </>
                 )
             default:
@@ -130,7 +141,7 @@ export default function Game() {
     }
 
     if ((loading) || !data.length) {
-        return <h1>Loading...</h1>
+        return <h1 className="font-bold text-2xl">Loading...</h1>
     }
 
     if (error) {
@@ -138,7 +149,10 @@ export default function Game() {
     }
 
     return (
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form 
+            onSubmit={(e) => handleSubmit(e)} 
+            className="flex flex-col items-center md:w-175"
+        >
 
             {data.map((item) => <Card
                 {...item}
@@ -147,7 +161,7 @@ export default function Game() {
                 key={item.question}
             />)}
 
-            <div className='result-check-cont'>
+            <div className='flex justify-center items-center gap-2.5 mt-5 mb-2.5 xs:gap-5'>
                 <Result />
             </div>
 

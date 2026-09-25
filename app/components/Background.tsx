@@ -7,9 +7,9 @@ export default async function Background() {
     'use cache'
 
     return (
-        <div className="bg-cont">
-            <Image src={blobYellow} alt='' id='blob-yellow' loading="eager" />
-            <Image src={blobBlue} alt='' id='blob-blue' loading="eager" />
+        <div>
+            <Image src={blobYellow} alt='' id='blob-yellow' loading="eager" className="absolute -z-1 right-0 top-0" />
+            <Image src={blobBlue} alt='' id='blob-blue' loading="eager" className="absolute -z-1 left-0 bottom-0" />
         </div>
     )
 }

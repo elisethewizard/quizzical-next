@@ -15,7 +15,7 @@ export default function Error(
 
     return (
         <>
-            <h1>Something went wrong.</h1>
+            <h1 className='font-bold text-xl'>Something went wrong.</h1>
             <p>Error message: {error.message}</p>
             <button
                 className='btn'
