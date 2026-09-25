@@ -1,10 +1,10 @@
-import Image from "next/image"
 import Game from "./components/Game"
 import { Suspense } from "react"
+import Loading from "./loading"
 
 export default function Home() {
     return (
-        <Suspense>
+        <Suspense fallback={<Loading />}>
             <Game />
         </Suspense>
     )
