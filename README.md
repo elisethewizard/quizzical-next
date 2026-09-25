@@ -7,6 +7,7 @@ A quiz minigame built with Next.js and using API of [Open Trivia Database](https
 * **React 19** - UI library
 * **Next.js 16** (App Router) - server actions
 * **TypeScript** - type safety
+* **Tailwind CSS** - styling
 
 ## Project structure
 
@@ -24,7 +25,7 @@ A quiz minigame built with Next.js and using API of [Open Trivia Database](https
 │   │   ├── data.ts          # Server actions - token management,
 │   │   │                      fetching data, checking answers
 │   │   └── types.ts         # TypeScript types definitions
-│   ├── index.css            # Styling
+│   ├── index.css            # Tailwind custom variables
 │   ├── layout.tsx
 │   ├── page.tsx             # Main game page
 │   ├── loading.tsx
