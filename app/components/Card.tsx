@@ -3,7 +3,7 @@ import Answer from "./Answer"
 
 export default function Card(props: CardProps){
     return (
-        <div className="border-b border-lightgray py-4 w-full">
+        <div className="py-4 w-full border-b border-lightgray dark:border-blue">
             <h1 className='font-karla font-bold text-base leading-[1.15] mb-3 xs:text-2xl md:text-[1.625rem]'>
                 {props.question}
             </h1>

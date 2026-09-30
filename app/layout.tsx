@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./index.css"
 import Background from "./components/Background"
+import { ThemeProvider } from 'next-themes'
+import ThemeSwitch from "./components/ThemeSwitch"
 
 const inter = Inter({
     variable: "--font-inter",
@@ -15,13 +17,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
-        <html lang="en" className={inter.variable}>
-            <body className='bg-light '>
-                <div className='flex flex-col justify-center items-center min-w-dvw min-h-dvh px-5 text-darkblue'>
-                    {children}
-                    <Background />
-                </div>
-            </body>
+        <html 
+            lang="en" 
+            className={inter.variable} 
+            suppressHydrationWarning
+        >
+            <ThemeProvider>
+                <body className='bg-light dark:bg-darkblue-sat'>
+                    <div className='flex flex-col justify-center items-center min-w-dvw min-h-dvh px-5 text-darkblue dark:text-lightgray dark:text-shadow-outline-1 dark:text-shadow-darkblue-sat'>
+                        {children}
+                        <Background />
+                        <ThemeSwitch />
+                    </div>
+                </body>
+            </ThemeProvider>
         </html>
     )
 }

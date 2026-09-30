@@ -14,11 +14,20 @@
     --color-selected-hl: hsl(230.32, 60.78%, 90%);
 	--color-correct-hl: hsl(132.54, 45.58%, 71.18%);
 	--color-wrong-hl: hsl(0, 81.08%, 85.49%);
+
+    --color-darkblue-sat: hsl(231 42% 40%);
+    --color-correct-dark: hsl(148, 67%, 30%);
+    --color-wrong-dark: hsl(0, 67%, 30%);
+
+    --text-shadow-outline-1: 1px 1px, 1px -1px, -1px -1px, -1px 1px;
 }
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark]  *));
 
 @layer base {
     * {
         line-height: normal;
+        transition: all 325ms ease-in-out;
     }
 }
 
@@ -43,6 +52,13 @@
         .btn {
 		    font-size: 1.25rem; /* 20px */
 	    }
+    }
+    @variant dark {
+        .btn {
+            background-color: var(--color-lightgray);
+            color: var(--color-darkblue);
+            @apply ring-1 ring-darkblue-sat/50;
+        }
     }
 }
 
