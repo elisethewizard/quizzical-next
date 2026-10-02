@@ -7,17 +7,23 @@
     --font-inter: "Inter", sans-serif;
     --font-karla: "Karla", sans-serif;
 
-    --color-light: hsl(220, 42.86%, 97.25%);
-    --color-lightgray: hsl(231.43, 41.18%, 90%);
-    --color-blue: hsl(229.63, 34.47%, 46.08%);
-    --color-darkblue: hsl(230.85, 41.84%, 27.65%);
-    --color-selected-hl: hsl(230.32, 60.78%, 90%);
-	--color-correct-hl: hsl(132.54, 45.58%, 71.18%);
-	--color-wrong-hl: hsl(0, 81.08%, 85.49%);
+    /* colors: background graphics */
+    --color-lightyellow: oklch(0.978 0.053 101.6); /* #fffad1 */
+    --color-lightblue: oklch(0.934 0.023 248.1); /* #deebf8 */
+    
+    /* colors: main */
+    --color-light: oklch(0.976 0.006 264.5); /* #f5f7fb | hsl(220, 42.86%, 97.25%) */
+    --color-lightgray: oklch(0.9 0.025 278.35); /* #daddef | hsl(231.43, 41.18%, 90%) */
+    --color-blue: oklch(0.49 0.11 273); /* #4c5a9e | hsl(229.63, 34.47%, 46.08%) */
+    --color-darkblue: oklch(0.337 0.09 273.1); /* #293265 | hsl(230.85, 41.84%, 27.65%) */
+    --color-selected-hl: oklch(0.896 0.036 277); /* #d6dbf5 | hsl(230.32, 60.78%, 90%) */
+	--color-correct-hl: oklch(0.82 0.1 150.25); /* #94d7a2 | hsl(132.54, 45.58%, 71.18%) */
+	--color-wrong-hl: oklch(0.85 0.07 18.6); /* #f8bcbc | hsl(0, 81.08%, 85.49%) */
 
-    --color-darkblue-sat: hsl(231 42% 40%);
-    --color-correct-dark: hsl(148, 67%, 30%);
-    --color-wrong-dark: hsl(0, 67%, 30%);
+    /* colors: dark theme */
+    --color-darkblue-sat: oklch(0.43 0.12 272.8); /* #3b4891 | hsl(231 42% 40%) */
+    --color-correct-dark: oklch(0.53 0.124 154); /* #1a8049 | hsl(148, 67%, 30%) */
+    --color-wrong-dark: oklch(0.393 0.138 26.3); /* #801919 | hsl(0, 67%, 30%) */
 
     --text-shadow-outline-1: 1px 1px, 1px -1px, -1px -1px, -1px 1px;
 }
