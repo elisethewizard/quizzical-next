@@ -54,9 +54,11 @@ A quiz minigame built with Next.js and using API of [Open Trivia Database](https
     <img src="public/screenshots/screenshot-5.png" alt="Screenshot of a final display with correct answers highlighted green, wrong user-selected answers highlighted red, and user score." width="416" />
 </div>
 
-<h3>Dark mode on mobile</h3>
+<h3>Mobile viewport</h3>
 
 <div>
-    <img src="public/screenshots/screenshot-6.png" alt="Screenshot of a quiz with some answers selected by user. Dark mode. Mobile, portrait orientation." height="600" />
-    <img src="public/screenshots/screenshot-7.png" alt="Screenshot of a final display with correct answers highlighted green, wrong user-selected answers highlighted red, and user score. Dark mode. Mobile, portrait orientation." height="600" />
+    <img src="public/screenshots/screenshot-mobile-1.png" alt="Screenshot of landing display. Light mode. Mobile, portrait orientation." width="206" />
+    <img src="public/screenshots/screenshot-mobile-2.png" alt="Screenshot of a quiz. Light mode. Mobile, portrait orientation." width="206" />
+    <img src="public/screenshots/screenshot-mobile-3.png" alt="Screenshot of a quiz with some answers selected by user. Dark mode. Mobile, portrait orientation." width="206" />
+    <img src="public/screenshots/screenshot-mobile-4.png" alt="Screenshot of a final display with correct answers highlighted green, wrong user-selected answers highlighted red, and user score. Dark mode. Mobile, portrait orientation." width="206" />
 </div>
